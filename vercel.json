@@ -2,14 +2,14 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "functions": {
-    "server/index.mjs": {
+    "api/index.mjs": {
       "includeFiles": "dist/**"
     }
   },
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/server/index.mjs"
+      "destination": "/api/index.mjs"
     }
   ]
 }
