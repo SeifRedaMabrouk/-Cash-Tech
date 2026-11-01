@@ -1,5 +1,3 @@
-import app from '../server/index.mjs';
+import server from '../dist/api/api.mjs';
 
-export default function handler(req, res) {
-  return app(req, res);
-}
+export default server;
