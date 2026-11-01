@@ -1,3 +1,5 @@
-import server from '../server/index.mjs';
+import app from '../server/index.mjs';
 
-export default server;
+export default function handler(req, res) {
+  return app(req, res);
+}
